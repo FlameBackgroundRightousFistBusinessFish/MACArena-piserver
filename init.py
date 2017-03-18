@@ -12,4 +12,7 @@ sock.listen()
 
 while(1):
     c, addr = sock.accept()
-    print ("Got connection from " + addr)
+    print ("Got connection from " + str(addr))
+
+    print(c.recv(2048))
+
